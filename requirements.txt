@@ -1,0 +1,7 @@
+# BlaBla's Python package uses the standard library only.
+# System tools, installed by scripts/setup.sh and documented in the README:
+#   Python 3.11+
+#   ffmpeg
+#   a local whisper.cpp build (whisper-cli and whisper-server)
+#
+# Tests: python3 -m pip install pytest && python3 -m pytest

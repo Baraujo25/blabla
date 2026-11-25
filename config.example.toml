@@ -1,0 +1,51 @@
+# BlaBla — local transcription with whisper.cpp.
+# Copy to the config path on first launch. Edit that copy, not this file.
+# Empty paths mean "use the default location for this Mac".
+
+backend = "whisper"
+
+# ffmpeg AVFoundation audio device index.
+# List devices: ./scripts/blabla devices
+audio_device = "0"
+
+sample_rate = 16000
+keep_recordings = true
+
+# Whisper language code. "en-US" is accepted and treated as "en". "auto" detects it.
+language = "en"
+
+# Hugging Face ggml name, a filename, or an absolute path to a .bin file.
+# large-v3-turbo is the default. large-v3-turbo-q5_0 uses less memory.
+model = "large-v3-turbo"
+model_dir = ""
+model_url = ""
+
+# Leave empty to use the binaries installed by scripts/setup.sh.
+whisper_server_bin = ""
+whisper_cli_bin = ""
+
+# "server" keeps the model loaded between dictations.
+# "cli" starts a fresh process every time and is the fallback for very long audio.
+whisper_mode = "server"
+server_host = "127.0.0.1"
+server_port = 8178
+whisper_threads = 4
+use_gpu = true
+model_load_timeout_sec = 180
+transcribe_timeout_sec = 0
+
+vocabulary_path = ""
+initial_prompt = ""
+prompt_max_chars = 800
+
+notify_preview = true
+
+log_level = "info"
+log_transcripts = false
+
+ffmpeg_bin = ""
+ffprobe_bin = ""
+
+# Keyboard shortcut: BlaBla does not register its own global hotkey.
+# Bind scripts/blabla toggle in skhd, Raycast, or Shortcuts.
+# See examples/skhd.example and ROADMAP.md.

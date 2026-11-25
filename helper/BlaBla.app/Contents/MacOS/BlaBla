@@ -1,0 +1,8 @@
+#!/bin/bash
+# simple-bar on-click. This app owns the microphone permission.
+set -euo pipefail
+ROOT="$(cd "$(dirname "$0")/../../../.." && pwd)"
+export BLABLA_ROOT="$ROOT"
+export PYTHONPATH="$ROOT${PYTHONPATH:+:$PYTHONPATH}"
+mkdir -p "${BLABLA_HOME:-$HOME/.blabla}"
+exec "$ROOT/helper/BlaBla.app/Contents/MacOS/BlaBlaBin" "${@:-toggle}"

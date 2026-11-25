@@ -1,0 +1,5 @@
+# Bind the BlaBla toggle command in skhd.
+# Replace the path with your checkout. Do not commit a machine-specific path.
+# https://github.com/koekeishiya/skhd
+
+ctrl + alt - space : /path/to/blabla/scripts/blabla toggle

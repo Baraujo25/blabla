@@ -1,0 +1,18 @@
+[project]
+name = "blabla"
+version = "2.0.0"
+description = "Local macOS dictation. Speak freely, transcribe on the machine, copy the text."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+blabla = "blabla.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
