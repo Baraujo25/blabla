@@ -11,7 +11,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Configurable vocabulary replacements and an initial prompt built from those spellings.
 - Copying the finished transcript to the clipboard. BlaBla does not paste it.
 - Timing logs for recording, model load, transcription, post-processing, and stop-to-insert.
-- `scripts/setup.sh`, sample config, tests, and a GitHub Actions workflow.
+- `scripts/setup.sh`, sample config, and tests.
 
 ### Removed
 
